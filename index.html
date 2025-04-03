@@ -25,7 +25,7 @@
     .navbar-brand img {
       height: 60px;
       transition: transform 0.3s;
-     
+
     }
 
     .navbar-brand img:hover {
@@ -77,7 +77,7 @@
       z-index: 1;
       transition: opacity 1s ease;
       opacity: 0.8;
-}
+    }
 
 
     .hero-overlay {
@@ -327,7 +327,7 @@
       .navbar-brand img {
         height: 35px;
       }
-      
+
       .hero-section {
         height: auto;
         min-height: 400px;
@@ -335,12 +335,12 @@
         position: relative;
         overflow: hidden;
       }
-      
+
       .hero-overlay {
         height: 100%;
         width: 100%;
       }
-      
+
       .hero-title {
         font-size: 2rem !important;
         margin-top: 20px;
@@ -366,20 +366,20 @@
         margin: 0 auto;
         padding: 20px;
       }
-      
+
       .btn-primary {
         padding: 10px 20px;
         font-size: 1rem;
       }
-      
+
       .section-title {
         font-size: 1.8rem;
       }
-      
+
       .service-card {
         margin-bottom: 20px;
       }
-      
+
       .footer-logo {
         height: 40px;
       }
@@ -425,11 +425,11 @@
       .hero-section {
         min-height: 350px;
       }
-      
+
       .hero-title {
         font-size: 1.6rem !important;
       }
-      
+
       .hero-text {
         font-size: 1rem !important;
       }
@@ -453,8 +453,8 @@
   <!-- Header -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="imgs/Colores.png" alt="Logo de Colores" class="animate__animated animate__fadeIn">
+      <a class="navbar-brand" href="Index.html">
+        <img src="imgs/Logo.png" alt="Logo de Colores" class="animate__animated animate__fadeIn">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -495,7 +495,7 @@
 
   <!-- Mobile Hero Image Section (solo visible en móvil) -->
   <section class="mobile-hero-image-section">
-    <img src="imgs/city.png" alt="Imagen hero para móviles" class="mobile-hero-image">
+    <img src="imgs/Colores.png" alt="Imagen hero para móviles" class="mobile-hero-image">
     <div class="mobile-hero-overlay"></div>
   </section>
 
@@ -511,8 +511,10 @@
         <div class="col-lg-6 mb-4 mb-lg-0">
           <h3 class="mb-4 text-primary">Misión</h3>
           <p class="lead">Brindar soluciones web personalizadas y de alta calidad que permitan a nuestros clientes
-            mejorar su visibilidad, atraer más clientes y optimizar su presencia en el mundo digital. A través de un enfoque
-            centrado en la innovación, el diseño intuitivo y la optimización para motores de búsqueda (SEO), ayudamos a negocios
+            mejorar su visibilidad, atraer más clientes y optimizar su presencia en el mundo digital. A través de un
+            enfoque
+            centrado en la innovación, el diseño intuitivo y la optimización para motores de búsqueda (SEO), ayudamos a
+            negocios
             y emprendedores a crecer, fortaleciendo su identidad digital y maximizando su impacto en el mercado.
           </p>
         </div>
@@ -525,7 +527,8 @@
         <div class="col-lg-6 mb-4 mb-lg-0">
           <h3 class="mb-4 text-primary">Visión</h3>
           <p class="lead">Ser una empresa enfocada en la creación de herramientas especializadas para empresas y
-            emprendedores, agregando valor a su marca y potenciando la presencia en línea de nuestros clientes. Nos esforzamos por transformar negocios
+            emprendedores, agregando valor a su marca y potenciando la presencia en línea de nuestros clientes. Nos
+            esforzamos por transformar negocios
             a través de tecnologías de vanguardia, asegurando que cada marca tenga una identidad digital sólida,
             competitiva y en constante evolución.
           </p>
@@ -650,7 +653,7 @@
         <div class="col-md-4 text-center" data-aos="fade-up">
           <div class="p-4">
             <div class="contact-icon">
-              <a href="mailto:contacto@example.com" class="text-white">
+              <a href="mailto:sydwebsolutions@gmail.com" class="text-white">
                 <i class="fas fa-envelope" style="font-size: 2.5rem;"></i>
               </a>
             </div>
@@ -689,12 +692,13 @@
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-4 mb-4 mb-lg-0">
-          <img src="imgs/Colores.png" alt="Logo de Colores" class="footer-logo">
+          <img src="imgs/Logo.png" alt="Logo de Colores" class="footer-logo">
           <p>Transformamos ideas en soluciones digitales innovadoras que impulsan el crecimiento de tu negocio.</p>
           <div class="mt-4">
-            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61574622735798" class="social-icon"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sydws1?igsh=MTQ5NzEyaTcybXZlbA==" class="social-icon"><i
+                class="fab fa-instagram"></i></a>
             <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
@@ -780,24 +784,24 @@
     // Verificar si las imágenes existen antes de cargarlas
     function checkImage(url, callback) {
       const img = new Image();
-      img.onload = function() {
+      img.onload = function () {
         callback(true);
       };
-      img.onerror = function() {
+      img.onerror = function () {
         callback(false);
       };
       img.src = url;
     }
 
     // Cambio de imagen en el hero con animación
-    const images = ["imgs/wtv.png", "imgs/hw.png","imgs/sim.png"];
+    const images = ["imgs/1.png", "imgs/2.png", "imgs/3.png"];
     let index = 0;
     let imagesAvailable = false;
 
     // Verificar si al menos una imagen está disponible
-    checkImage(images[0], function(exists) {
+    checkImage(images[0], function (exists) {
       if (!exists) {
-        checkImage(images[1], function(exists2) {
+        checkImage(images[1], function (exists2) {
           if (!exists2) {
             // Ninguna imagen está disponible, mostrar mensaje
             document.getElementById('imageBackupMessage').style.display = 'block';
@@ -821,17 +825,17 @@
 
     function changeImage() {
       if (!imagesAvailable) return;
-      
+
       index = (index + 1) % images.length;
       const heroImage = document.getElementById("heroImage");
       heroImage.style.opacity = "0";
 
       setTimeout(() => {
-        checkImage(images[index], function(exists) {
+        checkImage(images[index], function (exists) {
           if (exists) {
             heroImage.src = images[index];
             heroImage.style.opacity = "0.8";
-            
+
             // Actualizar también la imagen en móvil si existe
             const mobileHeroImage = document.querySelector('.mobile-hero-image');
             if (mobileHeroImage) {
@@ -846,14 +850,14 @@
 
     // Verificar también la imagen del logo
     const logo = document.querySelector('.navbar-brand img');
-    logo.onerror = function() {
+    logo.onerror = function () {
       this.src = 'data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="120" height="60" viewBox="0 0 120 60"%3E%3Crect fill="%2300c3ff" width="120" height="60"/%3E%3Ctext fill="%23ffffff" font-family="Arial" font-size="20" dy=".3em" text-anchor="middle" x="60" y="30"%3ELogo%3C/text%3E%3C/svg%3E';
     };
 
     // Verificar imagen del footer
     const footerLogo = document.querySelector('.footer-logo');
     if (footerLogo) {
-      footerLogo.onerror = function() {
+      footerLogo.onerror = function () {
         this.src = 'data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="120" height="60" viewBox="0 0 120 60"%3E%3Crect fill="%2300c3ff" width="120" height="60"/%3E%3Ctext fill="%23ffffff" font-family="Arial" font-size="20" dy=".3em" text-anchor="middle" x="60" y="30"%3ELogo%3C/text%3E%3C/svg%3E';
       };
     }
@@ -861,7 +865,7 @@
     // Verificar imagen hero para móviles
     const mobileHeroImage = document.querySelector('.mobile-hero-image');
     if (mobileHeroImage) {
-      mobileHeroImage.onerror = function() {
+      mobileHeroImage.onerror = function () {
         this.src = 'data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300"%3E%3Crect fill="%23141034" width="800" height="300"/%3E%3Ctext fill="%2300c3ff" font-family="Arial" font-size="30" dy=".3em" text-anchor="middle" x="400" y="150"%3EImagen Hero%3C/text%3E%3C/svg%3E';
       };
     }
